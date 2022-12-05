@@ -1237,7 +1237,7 @@ MonoBehaviour:
   siteUI: {fileID: 99233656}
   greenMat: {fileID: 2100000, guid: 58f2884c62accd3499c8cf1137faef3c, type: 2}
   redMat: {fileID: 2100000, guid: ddf1b432c62c4114a8fa4929a41dbf6f, type: 2}
-  rockonUI: {fileID: 0}
+  lockonUI: {fileID: 0}
   LockEnemys:
   - {fileID: 0}
 --- !u!1001 &1114114572
@@ -1302,6 +1302,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2604874552192507187, guid: ae374465a72c14d468850f5e0b6e53a1, type: 3}
   m_PrefabInstance: {fileID: 257883541}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1327334363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2281798418223109725, guid: 88adbdb81e46aaf4d91018ff0705d433, type: 3}
+  m_PrefabInstance: {fileID: 1887929917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1327334367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327334363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fabe214515c976438963217eac40e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 2689218682505565844, guid: c2c0cfbfc61357742b41863e61d5be2c, type: 3}
+  tagName:
+  - Obstacle
 --- !u!20 &1354863418 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3898266383657639609, guid: ae374465a72c14d468850f5e0b6e53a1, type: 3}
@@ -1618,6 +1638,10 @@ PrefabInstance:
     - target: {fileID: 2281798418223109725, guid: 88adbdb81e46aaf4d91018ff0705d433, type: 3}
       propertyPath: m_Name
       value: Player_PowerCanon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198053033646318407, guid: 88adbdb81e46aaf4d91018ff0705d433, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8219481315370184602, guid: 88adbdb81e46aaf4d91018ff0705d433, type: 3}
       propertyPath: m_RootOrder

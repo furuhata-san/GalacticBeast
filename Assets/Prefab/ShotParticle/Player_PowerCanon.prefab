@@ -38371,6 +38371,7 @@ GameObject:
   - component: {fileID: 8219481315370184602}
   - component: {fileID: 7198053033646318407}
   - component: {fileID: 1852111059007347938}
+  - component: {fileID: 1870931685}
   m_Layer: 0
   m_Name: Player_PowerCanon
   m_TagString: Untagged
@@ -38385,7 +38386,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2281798418223109725}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -42217,7 +42218,7 @@ ParticleSystem:
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 1
   TriggerModule:
@@ -43255,6 +43256,21 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &1870931685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2281798418223109725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fabe214515c976438963217eac40e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 2689218682505565844, guid: c2c0cfbfc61357742b41863e61d5be2c, type: 3}
+  tagName:
+  - Obstacle
 --- !u!1 &3100954432980138927
 GameObject:
   m_ObjectHideFlags: 0

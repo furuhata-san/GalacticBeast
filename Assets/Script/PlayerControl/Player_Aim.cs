@@ -18,7 +18,7 @@ public class Player_Aim : MonoBehaviour
     public void SiteColorRed(){ siteUI.material = redMat; }
 
     [Header("ロックオン情報")]
-    [SerializeField] private Image rockonUI;
+    [SerializeField] private Image lockonUI;
     [SerializeField] private Image[] LockEnemys = new Image[1];
 
     //Raycast保存
@@ -32,6 +32,7 @@ public class Player_Aim : MonoBehaviour
         public Vector3 hitPos;
     }
     private HitData hitData;
+
     public HitData GetSiteHitPoint()
     {
         //ヒットしたかどうかで返す数値を変更
@@ -51,23 +52,40 @@ public class Player_Aim : MonoBehaviour
 
     private void Start()
     {
+        hitData = new HitData();
+        //UIの位置にRayを発射し、ヒット座標計算
+        CreateSiteRay();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //Ray作成
+        CreateSiteRay();
+        //Rayがヒットしたかどうかでサイトのmaterial変更
+        SiteColorChanger(GetSiteHitPoint().hitChack);
+    }
+
+    private void CreateSiteRay()
+    {
         //UIの位置にRayを発射し、ヒット座標計算
         Vector2 sitePos = createRay.transform.position;
         Ray siteRay = playerCamera.ScreenPointToRay(sitePos);
         Physics.Raycast(siteRay, out site_raycast);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void SiteColorChanger(bool hitFlag)
     {
-        CreateSiteRay();
+        //ヒットしたら緑、しなかったら赤
+        if (hitFlag)
+        {
+            SiteColorGreen();
+        }
+        else
+        {
+            SiteColorRed();
+        }
+
     }
 
-    private void CreateSiteRay()
-    {
-        //UIの位置にRayを発射し、ヒット座標計算
-        Vector2 sitePos = siteUI.transform.position;
-        Ray siteRay = playerCamera.ScreenPointToRay(sitePos);
-        Physics.Raycast(siteRay, out site_raycast);
-    }
 }

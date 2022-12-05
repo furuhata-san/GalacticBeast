@@ -199,9 +199,9 @@ ParticleSystem:
       maxColor: {r: 1, g: 0.92156863, b: 0.70980394, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.827451, g: 0.9184315, b: 1, a: 1}
-        key1: {r: 0.19999999, g: 0.6666983, b: 1, a: 1}
-        key2: {r: 0.18431373, g: 0.4680187, b: 0.6627451, a: 0}
+        key0: {r: 1, g: 0.827451, b: 0.8393826, a: 1}
+        key1: {r: 1, g: 0.19999999, b: 0.2242443, a: 1}
+        key2: {r: 0.6627451, g: 0.18431373, b: 0.20196125, a: 0}
         key3: {r: 0.99607843, g: 0.7411765, b: 0.49803922, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -1474,9 +1474,9 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0, g: 0.5595119, b: 1, a: 1}
-        key1: {r: 0.37254906, g: 0.78683084, b: 1, a: 1}
-        key2: {r: 0.40392157, g: 0.40392157, b: 0.40392157, a: 0.5764706}
+        key0: {r: 1, g: 0, b: 0.06774902, a: 1}
+        key1: {r: 1, g: 0.37254906, b: 0.41780573, a: 1}
+        key2: {r: 0.6509434, g: 0.3531061, b: 0.3531061, a: 0.5764706}
         key3: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 0}
         key4: {r: 0.56078434, g: 0.56078434, b: 0.56078434, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -1503,10 +1503,10 @@ ParticleSystem:
         m_NumAlphaKeys: 4
       minGradient:
         serializedVersion: 2
-        key0: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
-        key1: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
-        key2: {r: 0.40392157, g: 0.40392157, b: 0.40392157, a: 0.5764706}
-        key3: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 0}
+        key0: {r: 0.6509434, g: 0.4452207, b: 0.4452207, a: 1}
+        key1: {r: 0.6792453, g: 0.5735137, b: 0.5735137, a: 1}
+        key2: {r: 0.5, g: 0.3278302, b: 0.3278302, a: 0.5764706}
+        key3: {r: 1, g: 0, b: 0, a: 0}
         key4: {r: 0.56078434, g: 0.56078434, b: 0.56078434, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
@@ -4949,8 +4949,8 @@ Transform:
   m_GameObject: {fileID: 2689218682505565844}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2689218682505202366}
   - {fileID: 2689218682505202364}
@@ -6294,8 +6294,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.7137255, g: 0.94104636, b: 0.9764706, a: 0}
-        key1: {r: 0, g: 0.44655704, b: 1, a: 1}
+        key0: {r: 0.9764706, g: 0.718819, b: 0.7137255, a: 0}
+        key1: {r: 1, g: 0, b: 0.047002792, a: 1}
         key2: {r: 0.5529412, g: 0.5529412, b: 0.5529412, a: 1}
         key3: {r: 0.5529412, g: 0.5529412, b: 0.5529412, a: 0}
         key4: {r: 0.5529412, g: 0.5529412, b: 0.5529412, a: 0}
@@ -9968,7 +9968,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.7254902, g: 0.7254902, b: 0.7254902, a: 0.69411767}
+      maxColor: {r: 0.7735849, g: 0.49991098, b: 0.49991098, a: 0.69411767}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -10987,7 +10987,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 0}
+        key0: {r: 0.9433962, g: 0, b: 0, a: 0}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 1}
         key3: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 0}
