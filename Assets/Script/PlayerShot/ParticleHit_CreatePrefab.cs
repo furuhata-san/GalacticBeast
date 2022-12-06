@@ -47,6 +47,9 @@ public class ParticleHit_CreatePrefab : MonoBehaviour
         {
             CreateEffect(collisionEvents[i].intersection);
         }
+
+        print("エフェクト生成");
+
     }
 
 }
