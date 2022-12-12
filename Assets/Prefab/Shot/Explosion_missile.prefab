@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6239335998260169011}
   - component: {fileID: 6239335998278519923}
   - component: {fileID: 6239335998278563283}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Dot Sparkles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4709,7 +4709,7 @@ GameObject:
   - component: {fileID: 6239335998260169013}
   - component: {fileID: 6239335998278519925}
   - component: {fileID: 6239335998278563285}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Explosion Mult
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9693,7 +9693,7 @@ GameObject:
   - component: {fileID: 6239335998260169015}
   - component: {fileID: 6239335998278519927}
   - component: {fileID: 6239335998278563287}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Smoke Colon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14400,7 +14400,7 @@ GameObject:
   - component: {fileID: 6239335998260169017}
   - component: {fileID: 6239335998278519929}
   - component: {fileID: 6239335998278563289}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Explosion Add
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19357,7 +19357,7 @@ GameObject:
   - component: {fileID: 6239335998260169019}
   - component: {fileID: 6239335998278519931}
   - component: {fileID: 6239335998278563291}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Smoke Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24002,7 +24002,7 @@ GameObject:
   - component: {fileID: 6239335998278519933}
   - component: {fileID: 6239335998278563293}
   - component: {fileID: 6239335998253244671}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Explosion_missile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24027,7 +24027,6 @@ Transform:
   - {fileID: 6239335998260169019}
   - {fileID: 6239335998260169013}
   - {fileID: 6239335998260169023}
-  - {fileID: 5596682897354778915}
   - {fileID: 2229568117931888016}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -28846,7 +28845,7 @@ GameObject:
   - component: {fileID: 6239335998260169023}
   - component: {fileID: 6239335998278519935}
   - component: {fileID: 6239335998278563295}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Glow Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33667,7 +33666,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2917236729744090370, guid: db4d433be4662374999b9baa65be05eb, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2917236729744090370, guid: db4d433be4662374999b9baa65be05eb, type: 3}
       propertyPath: m_LocalScale.x
@@ -33729,6 +33728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParticleSystem_Shockwave_Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 6257044063349824563, guid: db4d433be4662374999b9baa65be05eb, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7164097815101314245, guid: db4d433be4662374999b9baa65be05eb, type: 3}
       propertyPath: simulationSpeed
       value: 0.2
@@ -33759,78 +33762,4 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2917236729744090370, guid: db4d433be4662374999b9baa65be05eb, type: 3}
   m_PrefabInstance: {fileID: 3930832386111285394}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4701122656495738861
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 6239335998260169021}
-    m_Modifications:
-    - target: {fileID: 907149144977438414, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 907149144977438414, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 907149144977438414, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 907149144977438414, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 907149144977438414, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 907149144977438414, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 907149144977438414, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 907149144977438414, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 907149144977438414, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 907149144977438414, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 907149144977438414, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 908244269760180034, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: m_Name
-      value: PartsExplosion
-      objectReference: {fileID: 0}
-    - target: {fileID: 1019557344433263646, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1019557344433263646, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: InitialModule.startSize.minScalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1019557344433263646, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minScalar
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
---- !u!4 &5596682897354778915 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 907149144977438414, guid: 7867792e95ee0ce46a9e2879bd7d4a48, type: 3}
-  m_PrefabInstance: {fileID: 4701122656495738861}
   m_PrefabAsset: {fileID: 0}

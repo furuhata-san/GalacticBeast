@@ -54,8 +54,6 @@ public class Player_Aim : MonoBehaviour
         return hitData.hitChack;
     }
 
-
-
     private void Start()
     {
         hitData = new HitData();

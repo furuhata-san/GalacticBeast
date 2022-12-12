@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2689218682505202352}
   - component: {fileID: 2689218682524602352}
   - component: {fileID: 2689218682524579408}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4936,7 +4936,7 @@ GameObject:
   - component: {fileID: -7171163681741654266}
   - component: {fileID: 6384699765036265096}
   - component: {fileID: 6593474051426187104}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Explosion_Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9830,7 +9830,7 @@ GameObject:
   - component: {fileID: 2689218682505202360}
   - component: {fileID: 2689218682524602360}
   - component: {fileID: 2689218682524579416}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14492,7 +14492,7 @@ GameObject:
   - component: {fileID: 2689218682505202362}
   - component: {fileID: 2689218682524602362}
   - component: {fileID: 2689218682524579418}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Glow sparkles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19391,7 +19391,7 @@ GameObject:
   - component: {fileID: 2689218682505202364}
   - component: {fileID: 2689218682524602364}
   - component: {fileID: 2689218682524579420}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Dot Sparkles Vertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24263,7 +24263,7 @@ GameObject:
   - component: {fileID: 2689218682505202366}
   - component: {fileID: 2689218682524602366}
   - component: {fileID: 2689218682524579422}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Dot Sparkles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

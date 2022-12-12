@@ -9,13 +9,6 @@ public class Particle_LookTargetPos : MonoBehaviour
 
     [Header("âÒì]é≤"), SerializeField]
     private Vector3Int transformUp;
-    private Quaternion defLookAngle;//èâä˙ílÇÃï€ë∂
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        defLookAngle = this.transform.rotation;
-    }
 
     // Update is called once per frame
     void Update()
@@ -28,7 +21,7 @@ public class Particle_LookTargetPos : MonoBehaviour
         }
         else
         {
-            this.transform.rotation = defLookAngle;
+            this.transform.rotation = aimPos.gameObject.transform.localRotation;
         }
     }
 }

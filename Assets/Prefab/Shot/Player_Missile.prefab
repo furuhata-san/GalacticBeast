@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5733614825386420814}
   - component: {fileID: 4405067872476721892}
   - component: {fileID: 4405067872476721893}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player_Missile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,13 +100,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idleTime: 0.75
-  idleMoveValue: {x: 0, y: -3, z: 2}
+  idleMoveValue: 20
   maxSpeed: 200
   addSpeed: 150
   lookSpeed: 5
-  targetPos: {x: 50, y: 0, z: 100}
-  targetSetting: 1
-  liveTime: 10
+  liveTime: 5
   effectPrefab: {fileID: 6239335998260335901, guid: d1e348061e798c04b95e7f83b862a69f, type: 3}
 --- !u!54 &4405067872476721892
 Rigidbody:
@@ -148,7 +146,7 @@ GameObject:
   - component: {fileID: 5733614825329293465}
   - component: {fileID: 5733614825329293467}
   - component: {fileID: 5733614825329293464}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Afterburner
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}

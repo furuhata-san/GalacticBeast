@@ -10,7 +10,7 @@ public class PlayerMissile_Controller : MonoBehaviour
     private float idleTime;
     private float nowIdleCount;
     [Tooltip("静止時、指定座標分、弧を描いて移動"), SerializeField]
-    private Vector3 idleMoveValue;
+    private float idleMoveValue;
     private Vector3 idleStartPos;
     private Vector3 idleStopPos;
     private bool idleFirst;//Startとして扱うために使用する
@@ -104,11 +104,9 @@ public class PlayerMissile_Controller : MonoBehaviour
             return;
         }
 
-        //エフェクト生成＆破壊
+        //「エフェクト生成＆破壊」を行うため、時間を最大にする
         nowCount += liveTime;
     }
-
-
 
     private void Idle_Slerp()
     {
@@ -116,7 +114,7 @@ public class PlayerMissile_Controller : MonoBehaviour
         if (idleFirst)
         {
             idleStartPos = transform.position;
-            idleStopPos = idleStartPos + idleMoveValue;
+            idleStopPos = idleStartPos + (idleMoveValue * transform.forward);
             nowIdleCount = 0;
             idleFirst = false;
         }
