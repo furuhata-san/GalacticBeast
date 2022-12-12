@@ -43272,6 +43272,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2689218682505565844, guid: c2c0cfbfc61357742b41863e61d5be2c, type: 3}
   tagName:
   - Obstacle
+  - Enemy
 --- !u!114 &948552722
 MonoBehaviour:
   m_ObjectHideFlags: 0
