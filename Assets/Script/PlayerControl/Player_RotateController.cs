@@ -38,7 +38,7 @@ public class Player_RotateController : MonoBehaviour
         public Vector3 GetRotateVec() { return rotateVec; }
 
         //現在の速度
-        [System.NonSerialized]
+        //[System.NonSerialized]
         public float nowSpeed = 0;
     }
 
@@ -65,7 +65,8 @@ public class Player_RotateController : MonoBehaviour
                 print("RigidBodyがアタッチ・参照されていません");
             }
         }
-        
+
+        playerRB.interpolation = RigidbodyInterpolation.Extrapolate;
     }
 
     // Update is called once per frame

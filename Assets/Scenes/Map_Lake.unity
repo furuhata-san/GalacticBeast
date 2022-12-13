@@ -340,6 +340,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3898266383657639609, guid: ae374465a72c14d468850f5e0b6e53a1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3898266383657639609, guid: ae374465a72c14d468850f5e0b6e53a1, type: 3}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3898266383657639609, guid: ae374465a72c14d468850f5e0b6e53a1, type: 3}
+      propertyPath: far clip plane
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 594567611321599365, guid: ae374465a72c14d468850f5e0b6e53a1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ae374465a72c14d468850f5e0b6e53a1, type: 3}
@@ -1429,41 +1441,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0612f9ade4945544b78e7b155ade161, type: 3}
---- !u!1 &734355749 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8823633794279610207, guid: 892dad8f8f32a1d4a919d57136361c15, type: 3}
-  m_PrefabInstance: {fileID: 8823633794260688392}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &734355752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734355749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b61344266de4b40afe3d3209e9a15d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hpMgr: {fileID: 734355753}
-  effectCreateTime: 0
-  effectPrefab: {fileID: 909661167861749067, guid: 146cf0a26b35f43478b3ce130d1d5801, type: 3}
-  destoroyTime: 0
---- !u!114 &734355753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734355749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ef2c9dda6dde44e929cb44ff68711a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 10
-  nowHp: 0
 --- !u!1 &800739568 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3376022118838150387, guid: ae374465a72c14d468850f5e0b6e53a1, type: 3}
@@ -1576,12 +1553,14 @@ MonoBehaviour:
     add: 90
     inertia: 0.5
     rotateVec: {x: 1, y: 0, z: 0}
+    nowSpeed: 0
   pitchReverse: 0
   yawSpeed:
     max: 90
     add: 90
     inertia: 0.5
     rotateVec: {x: 0, y: 1, z: 0}
+    nowSpeed: 0
   padDeadZone: 0.1
 --- !u!114 &979302862
 MonoBehaviour:
@@ -1792,41 +1771,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2668188215850766593, guid: ae374465a72c14d468850f5e0b6e53a1, type: 3}
   m_PrefabInstance: {fileID: 257883541}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1606997863 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 627997703670129117, guid: 2e39cc6f01ebe84449d44b4c83fb502e, type: 3}
-  m_PrefabInstance: {fileID: 627997705021019469}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1606997866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606997863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b61344266de4b40afe3d3209e9a15d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hpMgr: {fileID: 1606997867}
-  effectCreateTime: 0
-  effectPrefab: {fileID: 909661167861749067, guid: 146cf0a26b35f43478b3ce130d1d5801, type: 3}
-  destoroyTime: 0
---- !u!114 &1606997867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606997863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ef2c9dda6dde44e929cb44ff68711a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 10
-  nowHp: 0
 --- !u!1001 &1669467899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2077,41 +2021,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689069356}
   m_CullTransparentMesh: 1
---- !u!1 &1694161094 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3759173599849321226, guid: fd738b435cb35f74f91e5115f9e01ee6, type: 3}
-  m_PrefabInstance: {fileID: 3759173598329972792}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1694161097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694161094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b61344266de4b40afe3d3209e9a15d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hpMgr: {fileID: 1694161098}
-  effectCreateTime: 0
-  effectPrefab: {fileID: 909661167861749067, guid: 146cf0a26b35f43478b3ce130d1d5801, type: 3}
-  destoroyTime: 0
---- !u!114 &1694161098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694161094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ef2c9dda6dde44e929cb44ff68711a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 10
-  nowHp: 0
 --- !u!1 &1927152454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,10 +2159,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: OilBarrel02
       objectReference: {fileID: 0}
-    - target: {fileID: 627997703670129117, guid: 2e39cc6f01ebe84449d44b4c83fb502e, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e39cc6f01ebe84449d44b4c83fb502e, type: 3}
 --- !u!1001 &3759173598329972792
@@ -2266,10 +2171,6 @@ PrefabInstance:
     - target: {fileID: 3759173599849321226, guid: fd738b435cb35f74f91e5115f9e01ee6, type: 3}
       propertyPath: m_Name
       value: OilBarrel01
-      objectReference: {fileID: 0}
-    - target: {fileID: 3759173599849321226, guid: fd738b435cb35f74f91e5115f9e01ee6, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3759173599849321230, guid: fd738b435cb35f74f91e5115f9e01ee6, type: 3}
       propertyPath: m_RootOrder
@@ -2428,10 +2329,6 @@ PrefabInstance:
     - target: {fileID: 8823633794279610207, guid: 892dad8f8f32a1d4a919d57136361c15, type: 3}
       propertyPath: m_Name
       value: OilBarrel03
-      objectReference: {fileID: 0}
-    - target: {fileID: 8823633794279610207, guid: 892dad8f8f32a1d4a919d57136361c15, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 892dad8f8f32a1d4a919d57136361c15, type: 3}

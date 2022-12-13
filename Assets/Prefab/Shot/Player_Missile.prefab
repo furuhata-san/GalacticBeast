@@ -105,7 +105,7 @@ MonoBehaviour:
   addSpeed: 150
   lookSpeed: 5
   liveTime: 5
-  effectPrefab: {fileID: 6239335998260335901, guid: d1e348061e798c04b95e7f83b862a69f, type: 3}
+  effectPrefab: {fileID: 909661167861749067, guid: 146cf0a26b35f43478b3ce130d1d5801, type: 3}
 --- !u!54 &4405067872476721892
 Rigidbody:
   m_ObjectHideFlags: 0
