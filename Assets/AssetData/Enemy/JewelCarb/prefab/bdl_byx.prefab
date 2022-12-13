@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4518007613169224}
   m_Layer: 0
   m_Name: bone R leg1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 4949457863418302}
   m_Layer: 0
   m_Name: bone Pelvis
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 4303885996148060}
   m_Layer: 0
   m_Name: bone R leg3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 4368682177329452}
   m_Layer: 0
   m_Name: Dummy03
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 4695114872183158}
   m_Layer: 0
   m_Name: bone L leg1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -602,7 +602,7 @@ GameObject:
   - component: {fileID: 4678457479103074}
   m_Layer: 0
   m_Name: bone L Clavicle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 4628789839044342}
   m_Layer: 0
   m_Name: bone R Clavicle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -889,7 +889,7 @@ GameObject:
   - component: {fileID: 4564112137223640}
   m_Layer: 0
   m_Name: Dummy04
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1016,7 +1016,7 @@ GameObject:
   - component: {fileID: 4665114550923942}
   m_Layer: 0
   m_Name: bone L leg3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1077,9 +1077,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4849984050191854}
+  - component: {fileID: 2143450010}
+  - component: {fileID: 2143450009}
   m_Layer: 0
   m_Name: HH_xiong
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1099,6 +1101,34 @@ Transform:
   m_Father: {fileID: 4949457863418302}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2143450010
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456694818380272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.9, z: 1.3}
+  m_Center: {x: -0.05, y: 0.05, z: 0}
+--- !u!114 &2143450009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456694818380272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eaaabe45c162fd48acee252861cc669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 0
+  nowHp: 0
+  baseHP: {fileID: 97908373411589572}
 --- !u!1 &1477664101135458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,7 +1234,7 @@ GameObject:
   - component: {fileID: 4259062407929088}
   m_Layer: 0
   m_Name: bone R leg4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1235,9 +1265,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4974263707317260}
   - component: {fileID: 789289834}
+  - component: {fileID: 435446290820811377}
+  - component: {fileID: 97908373411589572}
   m_Layer: 0
   m_Name: bdl_byx
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1279,6 +1311,49 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &435446290820811377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517330249523152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d176bf0ce23658746b4cd650cf86a349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 789289834}
+  enemyHP: {fileID: 97908373411589572}
+  waitTime: 18
+  attackReadyTime: 1
+  attackPlayWait: 3
+  attackData:
+  - power: 5
+    triggerName: Attack_Lv2
+    attackStartTime: 0.9
+    attackStayTime: 0.1
+    attackEndTime: 2
+  - power: 0
+    triggerName: Attack_Lv1
+    attackStartTime: 2.9
+    attackStayTime: 0.1
+    attackEndTime: 3
+  deleteTime: 10
+--- !u!114 &97908373411589572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517330249523152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ef2c9dda6dde44e929cb44ff68711a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 100
+  nowHp: 0
 --- !u!1 &1536241510600882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,7 +1396,7 @@ GameObject:
   - component: {fileID: 4232564371341950}
   m_Layer: 0
   m_Name: bone L leg2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1416,7 +1491,7 @@ GameObject:
   - component: {fileID: 4213475333754646}
   m_Layer: 0
   m_Name: bone R leg2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1448,7 +1523,7 @@ GameObject:
   - component: {fileID: 4134371462224820}
   m_Layer: 0
   m_Name: Dummy02
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1863,7 +1938,7 @@ GameObject:
   - component: {fileID: 4720057678296500}
   m_Layer: 0
   m_Name: HH_ride
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1956,7 +2031,7 @@ GameObject:
   - component: {fileID: 4491761708675910}
   m_Layer: 0
   m_Name: HH_Hair
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1985,6 +2060,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4836894797412354}
+  - component: {fileID: 737736782}
+  - component: {fileID: 737736781}
   m_Layer: 0
   m_Name: bone L Hand
   m_TagString: Untagged
@@ -2007,6 +2084,34 @@ Transform:
   m_Father: {fileID: 4895396339819540}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -19.205816, y: 1.3292253, z: 52.202133}
+--- !u!65 &737736782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787076071208876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.5, z: 0.3}
+  m_Center: {x: -0.1, y: 0.05, z: 0}
+--- !u!114 &737736781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787076071208876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eaaabe45c162fd48acee252861cc669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 0
+  nowHp: 0
+  baseHP: {fileID: 97908373411589572}
 --- !u!1 &1788364456783234
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,7 +2407,7 @@ GameObject:
   - component: {fileID: 4261858960534762}
   m_Layer: 0
   m_Name: Dummy01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2462,7 +2567,7 @@ GameObject:
   - component: {fileID: 4649169176741508}
   m_Layer: 0
   m_Name: 000
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2593,7 +2698,7 @@ GameObject:
   - component: {fileID: 4292800274679488}
   m_Layer: 0
   m_Name: HH_Head
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2685,6 +2790,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4821491778194248}
+  - component: {fileID: 708192941}
+  - component: {fileID: 708192940}
   m_Layer: 0
   m_Name: bone R Hand
   m_TagString: Untagged
@@ -2707,6 +2814,34 @@ Transform:
   m_Father: {fileID: 4011440772769034}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -19.205818, y: 1.3292228, z: 49.841957}
+--- !u!65 &708192941
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991812574298240}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.5, z: 0.3}
+  m_Center: {x: -0.1, y: 0.05, z: 0}
+--- !u!114 &708192940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991812574298240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eaaabe45c162fd48acee252861cc669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 0
+  nowHp: 0
+  baseHP: {fileID: 97908373411589572}
 --- !u!1 &1995947662976778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2718,7 +2853,7 @@ GameObject:
   - component: {fileID: 4376434247497344}
   m_Layer: 0
   m_Name: bone L leg4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

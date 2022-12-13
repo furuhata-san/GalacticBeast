@@ -24,6 +24,7 @@ public class PlayerMissile_Controller : MonoBehaviour
     private float lookSpeed;
     
     //ミサイルの目標地点
+    [SerializeField]
     private GameObject targetObject;
     private Vector3 targetPos;
     private bool targetSetting;

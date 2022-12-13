@@ -7,6 +7,9 @@ public class Player_Crashing : MonoBehaviour
     [Header("Player_MoveController‚ğQÆ"), SerializeField]
     private Player_MoveController PMC;
 
+    [Header("Õ“Ë‘ÎÛ"), SerializeField]
+    private string[] targetTagName = new string[1];
+
     [Header("°‚Æ‚ÌÕ“Ë‚É’µ‚Ë•Ô‚é‘¬“x"), SerializeField]
     private float knockbackPower;
 
@@ -24,8 +27,16 @@ public class Player_Crashing : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //áŠQ•¨‚Å‚Í‚È‚¢ê‡‚Íˆ—‚È‚µ
-        if(collision.transform.tag != "Obstacle") { return; }
+        //ƒ^ƒO‚Æˆê’v‚µ‚È‚¢ê‡‚Íreturn
+        bool flag = false;
+        for (int i = 0; i < targetTagName.Length; ++i){
+            if (collision.transform.tag == targetTagName[i])
+            {
+                flag = true;
+                break;
+            }
+        }
+        if (!flag) return;
 
         //RigidbodyÃ~
         Rigidbody myrb;

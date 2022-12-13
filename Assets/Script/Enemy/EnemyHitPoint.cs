@@ -5,9 +5,12 @@ using UnityEngine;
 public class EnemyHitPoint : MonoBehaviour
 {
     [Header("‰Šú‘Ì—Í"), SerializeField]
-    private float maxHp;
+    protected float maxHp;
+    public float GetMaxHP() { return maxHp; }
+
     [Header("Œ»İ‚Ì‘Ì—Í"), SerializeField]
-    private float nowHp;
+    protected float nowHp;
+    public float GetNowHP() { return nowHp; }
 
     void Start()
     {
@@ -15,7 +18,7 @@ public class EnemyHitPoint : MonoBehaviour
     }
 
     //ƒ_ƒ[ƒW
-    public void Damage(float value)
+    public virtual void Damage(float value)
     {
         nowHp -= value;
     }
