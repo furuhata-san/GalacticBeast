@@ -1,0 +1,4 @@
+Reproduction or plagiarism of source code other than that provided by Unity and the asset creators of
+this source is prohibited without the author's permission.
+We will deal with it as soon as we find it.
+In addition, self-made remarks are prohibited under any circumstances.
